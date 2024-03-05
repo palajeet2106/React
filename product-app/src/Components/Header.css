@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212121;
+    color: #fff;
+}
+.header{
+    background-color: #572406;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list li{
+    padding: 0 10px;
+    font-size: 17px;
+}
+.list li:hover{
+    color: rgb(15, 138, 13);
+    border-bottom: 3px solid;
+    
+}
