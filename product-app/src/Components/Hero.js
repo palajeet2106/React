@@ -1,27 +1,27 @@
 import React from 'react'
 import "./Hero.css"
-import img from "../Assets/img.png"
 
 
 
 
-const Hero = () => {
-    
-  return (
+
+const Hero = ({title , img , price}) => {
   
-    <div className='hero'>
-        <div className='box'>
-            <img src = {img} />
-        </div>
-        <div className='box' > <img src = {img} /></div>
-        <div  className='box'> <img src = {img} /></div>
-        <div  className='box'> <img src = {img} /></div>
-        <div  className='box'> <img src = {img} /></div>
+  return (
       
-
+    <div className='hero'>
         
-    </div>
+          <div className='box'>
+          <h2 style={{margin :"3px"}}>{title}</h2>
+          <div>
+             <img src = {img} />
+          </div>
+          <p style={{padding: " 0 0 10px 0"}}>Price :  ₹ {price}</p>
+ 
+          </div>
     
+    </div>
+
    
   )
 }
